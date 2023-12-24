@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Atama ve İşlemli Atama Operatörleri");
+﻿Console.WriteLine("Atama ve İşlemli Atama Operatörleri");
 // Atama ve İşlemli Atama Operatörleri
 int x = 3;
 int y = 3;

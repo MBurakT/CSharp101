@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-// Değişkenler case sensitive yani büyük küçük harf duyarlıdır.
+﻿// Değişkenler case sensitive yani büyük küçük harf duyarlıdır.
 // Değişken isimleri rakamlarla başlayamaz.
 // Değişken isimleri boşluk içeremez. Yalnızca "_" ifadesi kullanılabilir.
 // Değişken isimlerinin arasında matematiksel ifadeler yani işlem operatörleri kullanılamaz.
