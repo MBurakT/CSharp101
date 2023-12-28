@@ -1,6 +1,7 @@
 *.nupkg
 *.sln
 *.vscode
+*.vs
 [Dd]ebug/
 [Rr]elease/
 [Bb]in/
