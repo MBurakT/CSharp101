@@ -15,7 +15,7 @@ class Program
         
         List<string> textsFirst = new();
         List<string> textsSecond = new List<string>();
-        List<int> numbers = new List<int>() { 1, 2, 3, 4, 5 };
+        List<int> numbersFirst = new List<int>() { 1, 2, 3, 4, 5 };
         List<int> numbersSecond = new List<int>(new int[] { 1, 2, 3, 4, 5 });
         List<char> characters = ['a', 'b', 'c'];
         
