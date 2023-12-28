@@ -1,6 +1,0 @@
-namespace Inheritance;
-
-class Canlilar
-{
-
-}
