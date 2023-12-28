@@ -1,0 +1,6 @@
+namespace Inheritance;
+
+class TohumluBitkiler
+{
+
+}
