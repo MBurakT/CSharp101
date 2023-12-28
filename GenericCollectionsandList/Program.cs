@@ -11,8 +11,14 @@ class Program
         // List<T> class
         // System.Collections.Generic
         // T object türündedir.
-        // Generic List bir list sınıfı tanımlarken T olarak tip değişkenini alır. 
-
+        // Generic List bir list sınıfı tanımlarken T olarak tip değişkenini alır.
+        
+        List<string> textsFirst = new();
+        List<string> textsSecond = new List<string>();
+        List<int> numbers = new List<int>() { 1, 2, 3, 4, 5 };
+        List<int> numbersSecond = new List<int>(new int[] { 1, 2, 3, 4, 5 });
+        List<char> characters = ['a', 'b', 'c'];
+        
         // Generic Liste tanımlama ve eleman ekleme
         List<int> numbers = new List<int>();
         numbers.Add(23);
