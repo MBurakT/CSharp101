@@ -62,7 +62,7 @@ class Ogrenci
     {
         this.Sinif = this.Sinif + 1;
     }
-    
+
     public void SinifDusur()
     {
         this.Sinif = this.Sinif - 1;
