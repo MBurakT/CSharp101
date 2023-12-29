@@ -25,7 +25,7 @@ class Program
 
         logManager = new LogManager(smsLogger);
         logManager.WriteLog();
-
+        
         if (Console.ReadLine() == "clear") Console.Clear();
     }
 }
