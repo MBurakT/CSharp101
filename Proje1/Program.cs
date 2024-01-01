@@ -6,6 +6,8 @@ class Program
     {
         while (true)
         {
+            personManager.Sort(rehber, false);
+
             Console.Write("(1) Yeni Numara Kaydetmek\n" +
             "(2) Varolan Numarayı Silmek\n" +
             "(3) Varolan Numarayı Güncelleme\n" +
@@ -33,6 +35,7 @@ class Program
             {
                 case 1:
                     personManager.AddPerson(rehber, CreatePersonFromInputs());
+                    personManager.Sort(rehber, false);
                     break;
                 case 2:
                     while (true)
@@ -44,7 +47,7 @@ class Program
 
                         if (person is not null)
                         {
-                            string checkRemove = GetInputFromUser($"{person.Name} {person.Surname} isimli kişi rehberden silinmek üzere, onaylıyor musunuz ?(y/n)");
+                            string checkRemove = GetInputFromUser($"{person.Name} {person.Surname} isimli kişi rehberden silinmek üzere, onaylıyor musunuz? (y/n)");
 
                             if (checkRemove.Equals("y")) personManager.RemovePerson(rehber, person);
                             break;
@@ -53,6 +56,7 @@ class Program
                         string removeOperation = GetInputFromUser("(1) Silmeyi Sonlandırma\n(2) Yeniden Deneme\nLütfen yapmak istediğiniz işlemin numarasını giriniz");
                         if (!removeOperation.Equals("2")) break;
                     }
+                    personManager.Sort(rehber, false);
                     break;
                 case 3:
                     while (true)
@@ -73,9 +77,10 @@ class Program
                         string updateOperation = GetInputFromUser("(1) Güncellemeyi Sonlandırma\n(2) Yeniden Deneme\nLütfen yapmak istediğiniz işlemin numarasını giriniz: ");
                         if (!updateOperation.Equals("2")) break;
                     }
+                    personManager.Sort(rehber, false);
                     break;
                 case 4:
-                    string order = GetInputFromUser("(1) A-Z Sıralama\n(2) Z-A Sıralama\nLütfen yapmak istediğiniz işlemin numarasını giriniz: ");
+                    string order = GetInputFromUser("(1) A-Z Sıralama\n(2) Z-A Sıralama\nLütfen yapmak istediğiniz işlemin numarasını giriniz");
                     if (order.Equals(2))
                     {
                         personManager.Sort(rehber, true);
@@ -88,7 +93,7 @@ class Program
                 case 5:
                     string choice = GetInputFromUser("(1) İsim ve soyisime göre arama yapma\n" +
                     "(2) Telefon numarasına göre arama yapma\n" +
-                    "Lütfen yapmak istediğiniz işlemin numarasını giriniz: ");
+                    "Lütfen yapmak istediğiniz işlemin numarasını giriniz");
 
                     if (choice.Equals(2))
                     {
